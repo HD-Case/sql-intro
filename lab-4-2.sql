@@ -23,5 +23,14 @@
 -- | Matt       | Dermody   |
 -- | Billy      | Hamilton  |
 -- | Ian        | Happ      |
+.mode columns
+.header on
+
+SELECT players.first_name, players.last_name
+FROM players 
+INNER JOIN stats ON players.id = stats.player_id
+INNER JOIN teams ON teams.id = stats.team_id
+WHERE teams.year = 2020
+AND teams.name = "Chicago Cubs";
 
 
