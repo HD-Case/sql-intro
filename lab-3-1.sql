@@ -13,5 +13,11 @@
 -- | 2019 | 30       |
 -- | 2020 | 30       |
 -- +------+----------+
+.mode columns
+.header on
 
+SELECT year, COUNT(*)
+FROM teams
+GROUP BY year
+ORDER BY year;
 

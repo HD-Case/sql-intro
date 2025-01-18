@@ -38,5 +38,13 @@
 -- | Toronto Blue Jays             | 77.4             |
 -- | Washington Nationals          | 78.0             |
 -- +-------------------------------+------------------+
+.mode columns
+.header on
+
+SELECT name, AVG(wins)
+FROM teams
+WHERE year > 2000
+GROUP BY name;
+
 
 
