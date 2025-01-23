@@ -1,2 +1,2 @@
 DELETE FROM students
-WHERE
+WHERE id = 1;
